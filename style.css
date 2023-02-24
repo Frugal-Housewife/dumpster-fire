@@ -267,3 +267,285 @@
         top: 7px;
     }
 }
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 14px;
+    
+    background: var(--background);
+    color: var(--color);
+    scroll-behavior: smooth;
+    /* scroll-padding-top: .5rem; */
+}
+body{
+    font-family: 'Poppins', sans-serif; 
+}
+
+:root{
+    --background-2: linear-gradient(to right, #000046, #1CB5E0);
+    --background: #242222;
+    --color: #dacfcf;
+    --margin: 2.5rem;
+    --accent: orangered;
+    --border: 4px solid #dacfcf;
+}
+
+.nav{
+    background: linear-gradient(to right, #000041, #1CB5E0);
+}
+.nav a{
+    text-decoration: none;
+    color: var(--color);
+}
+.nav-wrapper{
+    height: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 6rem;
+    /* box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20); */
+    /* margin-bottom: var(--margin); */
+    border-radius: 0 0 2rem 2rem;
+    background: var(--accent);
+    border-bottom: var(--border);
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.top-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #000046, #1CB5E0);
+    height: 95svh;
+    padding: 1rem 1rem;
+}
+i{
+    color: var(--accent);
+    font-size: 14.2rem;
+    margin-bottom: 1.1rem;
+}
+.hero-title{
+    font-family: 'Phudu', cursive;
+    font-size: 7.8rem;
+    margin-bottom: 1.4rem;
+    font-weight: bold;
+    text-decoration: line-through;
+    text-decoration-color: var(--accent);
+}
+.hero-subtext{
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+.btn{
+    position: relative;
+    font-size: 1.2rem;
+    width: 14rem;
+    height: 5.5rem;
+    border-radius: 3rem;
+    background: var(--background);
+    
+}
+.btn:hover{
+    background: var(--accent);
+    color: var(--background);
+}
+.btn:active{
+    transform: translateY(3px);
+}
+
+.btn i{
+    color: var(--color);
+    font-size: 3.1rem;
+    position: relative;
+    top: 7px;
+}
+.btn i:hover{
+    color: var(--background);
+}
+
+
+
+
+.mid-wrapper{
+    /* outline: 1px solid lime; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+.mid-wrapper img{
+    width: 22rem;
+    border-radius: 1.5rem;
+}
+.mid-text{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.mid-text>i{
+    font-size: 3.4rem;
+    color: var(--accent);
+}
+
+.poetry{
+    /* outline: 1px solid lime; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+    padding: 1rem 2rem;
+    text-align: justify;
+    /* background: #1cb5e03b; */
+}
+.poetry-title{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1.4rem;
+    
+}
+.poetry p{
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+legend{
+    margin-left: 1.5rem;
+    background: var(--accent);
+    border-radius: 1rem;
+    padding-inline: .8rem;
+}
+fieldset{
+    width: 50ch;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+.offer{
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.offer-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.card{
+    border-radius: 1.5rem;
+    background: var(--background-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-inline: 2rem;
+    /* outline: 1px solid lime; */
+}
+.card img{
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+.card-title{
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+.price{
+    font-size: 2.8rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+.card-info{
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.buy-now{
+    font-size: 1.2rem;
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 3rem;
+    background: var(--background);
+    color: var(--color);
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.buy-now:active{
+    transform: translateY(3px);
+}
+.buy-now:hover{
+    background: var(--accent);
+    color: var(--background);
+}
+strong{
+    color: var(--accent);
+}
+
+
+
+
+address{
+    /* outline: 1px solid lime; */
+    font-size: 2rem;
+    background: var(--background-2);
+    padding: 1rem 1.2rem;
+    /* margin-bottom: var(--margin); */
+    border-radius: 1.2rem;
+    border-bottom: var(--border);
+    text-align: center;
+    margin-top: var(--margin);
+}
+address i{
+    color: var(--accent);
+    font-size: 1.8rem;
+    position: relative;
+    margin-right: .5rem;
+}
+
+.footer{
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding-inline: 2rem;
+    /* box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20); */
+    /* margin-bottom: var(--margin); */
+    border-radius: 2rem 2rem 0 0;
+    background: var(--accent);
+    border-top: var(--border);
+}
+.footer i{
+    color: var(--color);
+    font-size: 1.6rem;
+    position: relative;
+    top: 7px;
+}
