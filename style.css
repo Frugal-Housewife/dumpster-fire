@@ -1,5 +1,6 @@
 @media only screen and (max-width: 600px){
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
     *,
     *::before,
     *::after{
@@ -59,10 +60,10 @@
         text-align: center;
         background: linear-gradient(to right, #000046, #1CB5E0);
         height: 95vh;
-        padding: 1rem;
+        padding: 1rem 1rem;
     }
     i{
-        color: var(--color);
+        color: var(--accent);
         font-size: 9.2rem;
         margin-bottom: 1.1rem;
     }
@@ -72,7 +73,7 @@
         font-weight: bold;
     }
     .hero-subtext{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         margin-bottom: 1rem;
     }
     .btn{
@@ -101,11 +102,96 @@
     .mid-wrapper img{
         width: 22rem;
     }
+    .mid-text{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .mid-text>i{
+        font-size: 2.4rem;
+        color: var(--accent);
+    }
+
+    .poetry{
+        /* outline: 1px solid lime; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--margin);
+        padding: 1rem 2rem;
+        text-align: justify;
+        /* background: #1cb5e03b; */
+    }
+    .poetry-title{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 1.4rem;
+        
+    }
+    .poetry p{
+        line-height: 1.7;
+        margin-bottom: .8rem;
+    }
+    legend{
+        margin-left: 4rem;
+    }
+    fieldset{
+        padding: 1rem;
+    }
+
+
+    .offer{
+        outline: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    .offer-title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+    .card{
+        border-radius: 1.5rem;
+        background: var(--background-2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding-inline: 2rem;
+        /* outline: 1px solid lime; */
+    }
+    .card img{
+        border-radius: 50%;
+        margin: 1rem 0;
+    }
+    .card-title{
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+    }
+    .price{
+        font-size: 2.8rem;
+        color: var(--accent);
+        margin-bottom: 1.5rem;
+    }
+    .card-info{
+        line-height: 1.7;
+        text-align: justify;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+
 
 
     
     address{
-        outline: 1px solid lime;
+        /* outline: 1px solid lime; */
         font-size: 2rem;
         background: #1CB5E0;
         padding: 1rem 1.6rem;
