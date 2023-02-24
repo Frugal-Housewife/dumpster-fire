@@ -1,5 +1,4 @@
 @media only screen and (max-width: 600px){
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
     *,
     *::before,
@@ -11,10 +10,14 @@
 
     html{
         font-size: 14px;
-        font-family: 'Poppins', sans-serif;
+        
         background: var(--background);
         color: var(--color);
         scroll-behavior: smooth;
+        scroll-padding-top: .5rem;
+    }
+    body{
+        font-family: 'Poppins', sans-serif; 
     }
 
     :root{
@@ -23,6 +26,7 @@
         --color: #dacfcf;
         --margin: 2.5rem;
         --accent: orangered;
+        --border: 4px solid #dacfcf;
     }
 
     .nav{
@@ -43,6 +47,7 @@
         /* margin-bottom: var(--margin); */
         border-radius: 0 0 2rem 2rem;
         background: var(--accent);
+        border-bottom: var(--border);
     }
 
     .main-wrapper{
@@ -59,7 +64,7 @@
         align-items: center;
         text-align: center;
         background: linear-gradient(to right, #000046, #1CB5E0);
-        height: 95vh;
+        height: 95svh;
         padding: 1rem 1rem;
     }
     i{
@@ -68,15 +73,19 @@
         margin-bottom: 1.1rem;
     }
     .hero-title{
+        font-family: 'Phudu', cursive;
         font-size: 3.8rem;
         margin-bottom: 1.4rem;
         font-weight: bold;
+        text-decoration: line-through;
+        text-decoration-color: var(--accent);
     }
     .hero-subtext{
         font-size: 1.6rem;
         margin-bottom: 1rem;
     }
     .btn{
+        position: relative;
         font-size: 1.2rem;
         width: 12rem;
         height: 4rem;
@@ -86,6 +95,14 @@
     }
     .btn:active{
         background-color: var(--accent);
+        transform: translateY(3px);
+    }
+    
+    .btn>i{
+        color: var(--color);
+        font-size: 2.1rem;
+        position: relative;
+        top: 7px;
     }
 
 
@@ -101,6 +118,7 @@
     }
     .mid-wrapper img{
         width: 22rem;
+        border-radius: 1.5rem;
     }
     .mid-text{
         font-size: 2rem;
@@ -134,15 +152,19 @@
         margin-bottom: .8rem;
     }
     legend{
-        margin-left: 4rem;
+        margin-left: 2rem;
+        background: var(--accent);
+        border-radius: 1rem;
+        padding-inline: .8rem;
     }
     fieldset{
         padding: 1rem;
+        border-radius: 1rem;
     }
 
 
     .offer{
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -183,9 +205,26 @@
         line-height: 1.7;
         text-align: justify;
         font-size: 1.2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
-
+    .buy-now{
+        font-size: 1.2rem;
+        width: 10rem;
+        height: 3.5rem;
+        border-radius: 3rem;
+        background: var(--accent);
+        color: var(--color);
+        margin-bottom: 2rem;
+        cursor: pointer;
+        font-weight: bold;
+        
+    }
+    .buy-now:active{
+        transform: translateY(3px);
+    }
+    strong{
+        color: var(--accent);
+    }
 
 
 
@@ -193,16 +232,25 @@
     address{
         /* outline: 1px solid lime; */
         font-size: 2rem;
-        background: #1CB5E0;
-        padding: 1rem 1.6rem;
-        margin-bottom: var(--margin);
+        background: var(--background-2);
+        padding: 1rem 1.2rem;
+        /* margin-bottom: var(--margin); */
+        border-radius: 1.2rem;
+        border-bottom: var(--border);
+        text-align: center;
+        margin-top: var(--margin);
     }
-
+    address i{
+        color: var(--accent);
+        font-size: 1.8rem;
+        position: relative;
+        margin-right: .5rem;
+    }
     
     .footer{
         height: 5vh;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         text-align: center;
         align-items: center;
         padding-inline: 2rem;
@@ -210,5 +258,12 @@
         /* margin-bottom: var(--margin); */
         border-radius: 2rem 2rem 0 0;
         background: var(--accent);
+        border-top: var(--border);
+    }
+    .footer i{
+        color: var(--color);
+        font-size: 1.6rem;
+        position: relative;
+        top: 7px;
     }
 }

@@ -8,12 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icons8.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="nav">
         <div class="nav-wrapper">
             <a href="#home">Home</a>
             <a href="#gallery">Gallery</a>
+            <a href="#offer">Products</a>
             <a href="#contacts">Contacts</a>
         </div>
     </nav>
@@ -22,7 +29,7 @@
             <h1 class="hero-title">Dumpster Fire.</h1>
             <i class="fa-solid fa-dumpster-fire"></i>
             <p class="hero-subtext">Because life ain't getting better.</p>
-            <button class="btn">Press</button>
+            <button class="btn"><i class="fa-solid fa-fire-flame-curved"></i></button>
         </div>
         <div class="mid-wrapper" id="gallery">
             <div class="mid-text">This is <i class="fa-solid fa-fire"></i> yo</div>
@@ -60,31 +67,33 @@
                     To create a world that's bright and new.</p>
                 </fieldset>
         </div>
-        <div class="offer">
+        <div class="offer" id="offer">
             <h2 class="offer-title">What we offer:</h2>
             <div class="card">
                 <img src="//unsplash.it/200/200" alt="">
                 <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
                 <p class="price">$ 120.<sup>99</sup></p>
                 <p class="card-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias beatae odio labore adipisci, inventore nihil vero dolor ad voluptatibus delectus distinctio nobis, nam impedit nemo.</p>
+                <button class="buy-now">Buy now</button>
             </div>
             <div class="card">
                 <img src="//unsplash.it/200/200" alt="">
                 <h4 class="card-title">Lorem ipsum dolor sit amet <strong>DELUX</strong>.</h4>
                 <p class="price">$ 180.<sup>99</sup></p>
                 <p class="card-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias beatae odio labore adipisci, inventore nihil vero dolor ad voluptatibus delectus distinctio nobis, nam impedit nemo.</p>
+                <button class="buy-now">Buy now</button>
             </div>
         </div>
         <div class="botttom-wrapper" id="contacts">
             <address>
-                123 Main St<br>
-                Anytown, CA 12345<br>
-                USA
+                <i class="fa-solid fa-envelopes-bulk"></i>dumpster@fire.co.uk<br>
+                <i class="fa-solid fa-phone"></i>+44 7438 123456
             </address>
         </div>
     </main>
     <footer class="footer">
         <p>All Rights Reserved @ 2023</p>
+        <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
     </footer>
 </body>
 </html>
